@@ -3,7 +3,7 @@ import { PolicyPage } from "@/components/site/policy-page"
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "How Vanté collects, uses, and protects your personal information.",
+  description: "How Ascera collects, uses, and protects your personal information.",
 }
 
 export default function PrivacyPage() {

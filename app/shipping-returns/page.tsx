@@ -4,7 +4,7 @@ import { PolicyPage } from "@/components/site/policy-page"
 export const metadata: Metadata = {
   title: "Shipping & Returns",
   description:
-    "Vanté shipping options, delivery times, and our 60-day fit guarantee with easy exchanges.",
+    "Ascera shipping options, delivery times, and our 60-day fit guarantee with easy exchanges.",
 }
 
 export default function ShippingReturnsPage() {

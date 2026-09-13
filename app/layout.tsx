@@ -22,11 +22,11 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Vanté — Compression Wear & Awareness Apparel for POTS & Dysautonomia',
-    template: '%s · Vanté',
+    default: 'Ascera — Compression Wear & Awareness Apparel for POTS & Dysautonomia',
+    template: '%s · Ascera',
   },
   description:
-    'Vanté designs compression wear and awareness apparel with and for the dysautonomia and POTS community. Firm, moderate, and light support to help you stay upright.',
+    'Ascera designs compression wear and awareness apparel with and for the dysautonomia and POTS community. Firm, moderate, and light support to help you stay upright.',
   generator: 'v0.app',
   icons: {
     icon: [

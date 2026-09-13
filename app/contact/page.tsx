@@ -5,7 +5,7 @@ import { ContactForm } from "@/components/site/contact-form"
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with the Vanté team for help with fit, sizing, orders, or anything else.",
+    "Get in touch with the Ascera team for help with fit, sizing, orders, or anything else.",
 }
 
 const channels = [

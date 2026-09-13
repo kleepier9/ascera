@@ -3,7 +3,7 @@ import { PolicyPage } from "@/components/site/policy-page"
 
 export const metadata: Metadata = {
   title: "Terms of Service",
-  description: "The terms that govern your use of the Vanté website and purchases.",
+  description: "The terms that govern your use of the Ascera website and purchases.",
 }
 
 export default function TermsPage() {
@@ -27,7 +27,7 @@ export default function TermsPage() {
         {
           heading: "Not medical advice",
           paragraphs: [
-            "Vanté products are not intended to diagnose, treat, cure, or prevent any disease. Nothing on this site substitutes for professional medical advice. Always consult a qualified healthcare professional about your individual needs.",
+            "Ascera products are not intended to diagnose, treat, cure, or prevent any disease. Nothing on this site substitutes for professional medical advice. Always consult a qualified healthcare professional about your individual needs.",
           ],
         },
       ]}

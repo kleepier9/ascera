@@ -264,7 +264,7 @@ export function CheckoutView() {
 
       <div className="mt-8">
         <Disclaimer variant="inline">
-          Vanté products are not intended to diagnose, treat, cure, or prevent
+          Ascera products are not intended to diagnose, treat, cure, or prevent
           any disease. Consult a healthcare professional about your needs.
         </Disclaimer>
       </div>

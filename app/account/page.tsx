@@ -4,7 +4,7 @@ import { Package, Heart, MapPin, ChevronRight } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Your Account",
-  description: "Manage your Vanté orders, wishlist, and details.",
+  description: "Manage your Ascera orders, wishlist, and details.",
 }
 
 const links = [

@@ -54,7 +54,7 @@ export function Hero() {
           <div className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-muted">
             <Image
               src="/images/hero-leggings.png"
-              alt="A person standing confidently wearing Vanté full-leg compression leggings"
+              alt="A person standing confidently wearing Ascera full-leg compression leggings"
               fill
               priority
               sizes="(max-width: 1024px) 100vw, 50vw"

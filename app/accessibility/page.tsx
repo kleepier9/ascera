@@ -4,7 +4,7 @@ import { PolicyPage } from "@/components/site/policy-page"
 export const metadata: Metadata = {
   title: "Accessibility",
   description:
-    "Vanté's commitment to building an accessible, inclusive shopping experience for everyone.",
+    "Ascera's commitment to building an accessible, inclusive shopping experience for everyone.",
 }
 
 export default function AccessibilityPage() {
