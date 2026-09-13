@@ -37,10 +37,10 @@ const columns = [
 export function Footer() {
   return (
     <footer className="border-t border-border bg-card">
-      <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 py-16 lg:py-20 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-10 border-b border-border pb-10 lg:flex-row lg:items-center lg:justify-between">
           <div className="max-w-md">
-            <h2 className="font-display text-2xl font-semibold text-foreground text-balance">
+            <h2 className="section-heading text-foreground">
               Support that keeps you upright.
             </h2>
             <p className="mt-2 text-sm text-muted-foreground">
@@ -51,7 +51,7 @@ export function Footer() {
           <Newsletter />
         </div>
 
-        <div className="grid grid-cols-2 gap-8 py-10 md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-10 py-16 md:grid-cols-4">
           <div className="col-span-2 md:col-span-1">
             <Logo variant="full" />
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-muted-foreground">
@@ -61,7 +61,7 @@ export function Footer() {
           </div>
           {columns.map((col) => (
             <nav key={col.title} aria-label={col.title}>
-              <h3 className="text-sm font-semibold text-foreground">
+              <h3 className="text-sm font-medium uppercase tracking-[0.12em] text-foreground">
                 {col.title}
               </h3>
               <ul className="mt-3 space-y-2.5">
@@ -80,7 +80,7 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="rounded-xl border border-border bg-muted/40 p-4">
+        <div className="border-t border-border pt-6">
           <p className="text-xs leading-relaxed text-muted-foreground">
             <span className="font-medium text-foreground">Medical disclaimer: </span>
             {MEDICAL_DISCLAIMER}

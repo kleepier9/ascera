@@ -6,7 +6,7 @@
 
 @theme inline {
   --font-sans: var(--font-inter);
-  --font-display: var(--font-space-grotesk);
+  --font-display: var(--font-inter);
 
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -60,36 +60,36 @@
 
 :root {
   color-scheme: light;
-  --background: oklch(0.985 0.006 250);
-  --foreground: oklch(0.24 0.035 262);
+  --background: #fafafa;
+  --foreground: #202629;
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.24 0.035 262);
+  --card-foreground: #202629;
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.24 0.035 262);
-  --primary: oklch(0.62 0.115 205);
+  --primary: #202e32;
   --primary-foreground: oklch(0.99 0.005 200);
   --secondary: oklch(0.962 0.008 250);
   --secondary-foreground: oklch(0.28 0.035 262);
-  --muted: oklch(0.962 0.008 250);
-  --muted-foreground: oklch(0.52 0.02 258);
+  --muted: #f0f2f2;
+  --muted-foreground: #60696c;
   --accent: oklch(0.95 0.024 205);
   --accent-foreground: oklch(0.28 0.04 240);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.91 0.008 255);
-  --input: oklch(0.91 0.008 255);
+  --border: #dfe3e3;
+  --input: #dfe3e3;
   --ring: oklch(0.62 0.115 205);
   --chart-1: oklch(0.62 0.115 205);
   --chart-2: oklch(0.68 0.16 30);
   --chart-3: oklch(0.55 0.09 285);
   --chart-4: oklch(0.72 0.1 190);
   --chart-5: oklch(0.4 0.05 262);
-  --radius: 0.75rem;
+  --radius: 0.25rem;
 
-  --navy: oklch(0.24 0.035 262);
+  --navy: #18272c;
   --navy-foreground: oklch(0.98 0.006 250);
-  --coral: oklch(0.68 0.16 30);
+  --coral: #ac715a;
   --coral-foreground: oklch(0.99 0.01 40);
-  --teal: oklch(0.62 0.115 205);
+  --teal: #28756e;
   --teal-foreground: oklch(0.99 0.005 200);
   --lavender: oklch(0.9 0.04 300);
   --lavender-foreground: oklch(0.32 0.06 292);
@@ -110,6 +110,18 @@
   }
   body {
     @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer components {
+  .section-heading {
+    font-family: var(--font-inter), sans-serif;
+    font-size: clamp(2rem, 3.2vw, 3rem);
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.045em;
+    text-wrap: balance;
   }
 }
 

@@ -4,11 +4,11 @@ import { ArrowRight } from "lucide-react"
 
 export function Mission() {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-      <div className="grid items-center gap-10 overflow-hidden rounded-3xl border border-border bg-card lg:grid-cols-2">
+    <section className="mx-auto max-w-7xl px-4 py-20 lg:py-28 sm:px-6 lg:px-8">
+      <div className="grid items-center gap-10 overflow-hidden rounded-none bg-muted lg:grid-cols-2">
         <div className="p-8 sm:p-12">
-          <p className="text-sm font-medium text-teal">Our story</p>
-          <h2 className="mt-2 font-display text-2xl font-semibold text-foreground text-balance sm:text-3xl">
+          <p className="text-sm font-medium uppercase tracking-[0.16em] text-teal">Our story</p>
+          <h2 className="mt-2 section-heading text-foreground">
             Built by people who understand the daily reality.
           </h2>
           <p className="mt-4 leading-relaxed text-muted-foreground text-pretty">
@@ -23,7 +23,7 @@ export function Mission() {
           </p>
           <Link
             href="/about"
-            className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-teal transition-colors hover:text-teal/80"
+            className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium uppercase tracking-[0.16em] text-teal transition-colors hover:text-teal/80"
           >
             Read our story
             <ArrowRight className="size-4" />

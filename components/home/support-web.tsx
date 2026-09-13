@@ -18,9 +18,9 @@ const points = [
 
 export function SupportWeb() {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+    <section className="mx-auto max-w-7xl px-4 py-20 lg:py-28 sm:px-6 lg:px-8">
       <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
-        <div className="relative order-last aspect-square overflow-hidden rounded-3xl bg-muted lg:order-first">
+        <div className="relative order-last aspect-square overflow-hidden rounded-none bg-muted lg:order-first">
           <Image
             src="/images/support-map.png"
             alt="Diagram showing the Support-Web compression zones mapped across the leg"
@@ -31,7 +31,7 @@ export function SupportWeb() {
         </div>
         <div>
           <p className="text-sm font-medium text-teal">The Support-Web</p>
-          <h2 className="mt-2 font-display text-2xl font-semibold text-foreground text-balance sm:text-3xl">
+          <h2 className="mt-2 section-heading text-foreground">
             Our signature construction, engineered around your circulation.
           </h2>
           <p className="mt-3 text-muted-foreground text-pretty">

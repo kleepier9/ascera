@@ -35,9 +35,9 @@ export function Newsletter({ compact = false }: { compact?: boolean }) {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         placeholder="Enter your email"
-        className="h-11 flex-1 rounded-full border border-border bg-card px-4 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground focus-visible:border-teal focus-visible:ring-2 focus-visible:ring-teal/30"
+        className="h-12 min-w-0 flex-1 rounded-sm border border-border bg-card px-4 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground focus-visible:border-teal focus-visible:ring-2 focus-visible:ring-teal/30"
       />
-      <Button type="submit" size="lg" className="shrink-0 rounded-full">
+      <Button type="submit" size="lg" className="h-12 shrink-0 rounded-sm px-5">
         Subscribe
         <ArrowRight className="size-4" />
       </Button>

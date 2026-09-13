@@ -1,6 +1,6 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Inter, Space_Grotesk } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
 import { CartProvider } from '@/lib/cart-context'
 import { AnnouncementBar } from '@/components/site/announcement-bar'
@@ -11,12 +11,6 @@ import { CartDrawer } from '@/components/site/cart-drawer'
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
-  display: 'swap',
-})
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
-  variable: '--font-space-grotesk',
   display: 'swap',
 })
 
@@ -36,7 +30,7 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   colorScheme: 'light',
-  themeColor: '#28324f',
+  themeColor: '#18272c',
 }
 
 export default function RootLayout({
@@ -47,7 +41,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`bg-background ${inter.variable} ${spaceGrotesk.variable}`}
+      className={`bg-background ${inter.variable}`}
     >
       <body className="font-sans antialiased">
         <CartProvider>

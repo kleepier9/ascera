@@ -27,7 +27,7 @@ export type Product = {
   rating: number
   reviewCount: number
   image: string
-  hoverImage: string
+  hoverImage?: string
   gallery: string[]
   badge?: string
   lowStock?: boolean
@@ -85,7 +85,6 @@ export const products: Product[] = [
     rating: 4.7,
     reviewCount: 156,
     image: "/images/shorts.png",
-    hoverImage: "/images/leggings.png",
     gallery: ["/images/shorts.png", "/images/support-map.png"],
     badge: "New",
     inStock: true,
@@ -107,7 +106,6 @@ export const products: Product[] = [
     rating: 4.6,
     reviewCount: 98,
     image: "/images/tights.png",
-    hoverImage: "/images/leggings-back.png",
     gallery: ["/images/tights.png", "/images/support-map.png"],
     inStock: true,
     shortDescription:
@@ -128,7 +126,6 @@ export const products: Product[] = [
     rating: 4.9,
     reviewCount: 342,
     image: "/images/calf-sleeves.png",
-    hoverImage: "/images/leggings.png",
     gallery: ["/images/calf-sleeves.png", "/images/support-map.png"],
     badge: "Bestseller",
     inStock: true,
@@ -150,7 +147,6 @@ export const products: Product[] = [
     rating: 4.5,
     reviewCount: 64,
     image: "/images/tights.png",
-    hoverImage: "/images/leggings.png",
     gallery: ["/images/tights.png"],
     inStock: true,
     shortDescription:
@@ -171,7 +167,6 @@ export const products: Product[] = [
     rating: 4.4,
     reviewCount: 41,
     image: "/images/shorts.png",
-    hoverImage: "/images/support-map.png",
     gallery: ["/images/shorts.png"],
     inStock: false,
     shortDescription:
@@ -192,7 +187,6 @@ export const products: Product[] = [
     rating: 4.8,
     reviewCount: 76,
     image: "/images/tee-upright.png",
-    hoverImage: "/images/tee-tempo.png",
     gallery: ["/images/tee-upright.png"],
     inStock: true,
     shortDescription:
@@ -212,7 +206,6 @@ export const products: Product[] = [
     rating: 4.9,
     reviewCount: 121,
     image: "/images/tee-tempo.png",
-    hoverImage: "/images/tee-upright.png",
     gallery: ["/images/tee-tempo.png"],
     badge: "Bestseller",
     inStock: true,

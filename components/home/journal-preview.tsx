@@ -5,10 +5,10 @@ import { journalPosts } from "@/lib/content"
 
 export function JournalPreview() {
   return (
-    <section className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
+    <section className="mx-auto max-w-7xl px-4 pb-20 lg:pb-28 sm:px-6 lg:px-8">
       <div className="flex items-end justify-between gap-4">
         <div>
-          <h2 className="font-display text-2xl font-semibold text-foreground text-balance sm:text-3xl">
+          <h2 className="section-heading text-foreground">
             From the Journal
           </h2>
           <p className="mt-1.5 max-w-md text-sm text-muted-foreground text-pretty">
@@ -26,7 +26,7 @@ export function JournalPreview() {
       <div className="mt-8 grid gap-6 md:grid-cols-3">
         {journalPosts.map((post) => (
           <Link key={post.slug} href={`/learn/${post.slug}`} className="group flex flex-col">
-            <div className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-muted">
+            <div className="relative aspect-[16/10] overflow-hidden rounded-none bg-muted">
               <Image
                 src={post.image || "/placeholder.svg"}
                 alt=""

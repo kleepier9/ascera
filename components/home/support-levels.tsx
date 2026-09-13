@@ -28,12 +28,11 @@ const levels = [
 export function SupportLevels() {
   return (
     <section className="bg-navy text-navy-foreground">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 py-20 lg:py-28 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
-          <p className="text-sm font-medium text-teal">Know your support</p>
-          <h2 className="mt-2 font-display text-2xl font-semibold text-balance sm:text-3xl">
-            Three clearly-labeled levels, so you always know what you&apos;re
-            getting.
+          <p className="text-sm font-medium uppercase tracking-[0.16em] text-white/65">Know your support</p>
+          <h2 className="mt-2 section-heading">
+            Your day. Your level of support.
           </h2>
           <p className="mt-3 text-navy-foreground/70 text-pretty">
             No guesswork and no vague marketing. Every garment tells you exactly
@@ -45,7 +44,7 @@ export function SupportLevels() {
           {levels.map((level) => (
             <div
               key={level.name}
-              className="rounded-2xl border border-white/10 bg-white/5 p-6"
+              className="border-t border-white/25 py-8 md:pr-8"
             >
               <div className="flex items-baseline justify-between">
                 <h3 className="font-display text-lg font-semibold">
@@ -57,7 +56,7 @@ export function SupportLevels() {
               </div>
               <div className="mt-4 h-1.5 overflow-hidden rounded-full bg-white/10">
                 <div
-                  className="h-full rounded-full bg-teal"
+                  className="h-full rounded-full bg-white/75"
                   style={{ width: `${level.bar}%` }}
                 />
               </div>
@@ -71,7 +70,7 @@ export function SupportLevels() {
         <div className="mt-8">
           <Link
             href="/support-finder"
-            className="inline-flex items-center gap-1.5 rounded-full bg-teal px-5 py-2.5 text-sm font-medium text-teal-foreground transition-colors hover:bg-teal/90"
+            className="inline-flex items-center gap-1.5 rounded-sm bg-white px-5 py-2.5 text-sm font-medium uppercase tracking-[0.16em] text-white/65-foreground transition-colors hover:bg-teal/90"
           >
             Take the Support Finder
             <ArrowRight className="size-4" />

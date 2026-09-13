@@ -30,7 +30,7 @@ export function ProductCard({ product }: { product: Product }) {
 
   return (
     <div className="group relative flex flex-col">
-      <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-muted">
+      <div className="relative aspect-[4/5] overflow-hidden rounded-sm bg-muted">
         <Link href={`/products/${product.slug}`} className="relative block size-full">
           <Image
             src={product.image || "/placeholder.svg"}
@@ -39,17 +39,19 @@ export function ProductCard({ product }: { product: Product }) {
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
             className={cn(
               "object-cover transition-opacity duration-500",
-              "group-hover:opacity-0",
+              product.hoverImage && "group-hover:opacity-0",
             )}
           />
-          <Image
-            src={product.hoverImage || "/placeholder.svg"}
-            alt=""
-            aria-hidden="true"
-            fill
-            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-            className="object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-          />
+          {product.hoverImage ? (
+            <Image
+              src={product.hoverImage}
+              alt=""
+              aria-hidden="true"
+              fill
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              className="object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+            />
+          ) : null}
         </Link>
 
         <div className="absolute left-3 top-3 flex flex-col gap-1.5">
@@ -97,7 +99,7 @@ export function ProductCard({ product }: { product: Product }) {
               <button
                 type="button"
                 onClick={() => setShowSizes(true)}
-                className="flex w-full items-center justify-center gap-1.5 rounded-full bg-navy py-2.5 text-sm font-medium text-navy-foreground opacity-0 shadow-lg transition-all duration-200 hover:bg-navy/90 focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring group-hover:opacity-100 max-md:opacity-100"
+                className="flex w-full items-center justify-center gap-1.5 rounded-sm bg-navy py-3 text-sm font-medium text-navy-foreground opacity-0 shadow-lg transition-all duration-200 hover:bg-navy/90 focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring group-hover:opacity-100 max-md:opacity-100"
               >
                 <Plus className="size-4" />
                 Quick Add
@@ -107,7 +109,7 @@ export function ProductCard({ product }: { product: Product }) {
         ) : null}
       </div>
 
-      <div className="mt-3 flex flex-1 flex-col">
+      <div className="mt-5 flex flex-1 flex-col">
         <div className="flex items-center gap-2 text-xs text-muted-foreground">
           <span>{product.categoryLabel}</span>
           {product.category === "Compression" ? (
@@ -117,7 +119,7 @@ export function ProductCard({ product }: { product: Product }) {
             </>
           ) : null}
         </div>
-        <h3 className="mt-1 text-sm font-medium leading-snug text-foreground text-pretty">
+        <h3 className="mt-2 text-base font-medium leading-snug text-foreground text-pretty">
           <Link href={`/products/${product.slug}`} className="after:absolute after:inset-0 after:content-['']">
             {product.name}
           </Link>
@@ -137,7 +139,7 @@ export function ProductCard({ product }: { product: Product }) {
               <span
                 key={color.name}
                 title={color.name}
-                className="size-3.5 rounded-full border border-border"
+                className="size-3 rounded-full border border-border"
                 style={{ backgroundColor: color.hex }}
               />
             ))}
