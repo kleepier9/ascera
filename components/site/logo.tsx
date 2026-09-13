@@ -1,25 +1,25 @@
+import Image from "next/image"
 import { cn } from "@/lib/utils"
 
 export function Logo({
   className,
-  showMark = true,
+  variant = "compact",
 }: {
   className?: string
-  showMark?: boolean
+  variant?: "compact" | "full"
 }) {
   return (
-    <span className={cn("inline-flex items-center gap-2", className)}>
-      {showMark ? (
-        <span
-          aria-hidden="true"
-          className="grid size-7 place-items-center rounded-md bg-navy"
-        >
-          <span className="block h-3.5 w-1.5 rounded-full bg-teal" />
-        </span>
-      ) : null}
-      <span className="font-display text-xl font-semibold tracking-tight text-foreground">
-        Vant&eacute;
-      </span>
-    </span>
+    <Image
+      src={variant === "full" ? "/brand/ascera-logo-with-icon.png" : "/brand/ascera-logo.png"}
+      alt="Ascera"
+      width={2172}
+      height={724}
+      priority={variant === "compact"}
+      className={cn(
+        "block shrink-0 object-cover object-center",
+        variant === "full" ? "h-12 w-[216px]" : "h-8 w-32 sm:w-[160px]",
+        className,
+      )}
+    />
   )
 }

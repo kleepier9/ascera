@@ -53,7 +53,7 @@ export function Footer() {
 
         <div className="grid grid-cols-2 gap-8 py-10 md:grid-cols-4">
           <div className="col-span-2 md:col-span-1">
-            <Logo />
+            <Logo variant="full" />
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-muted-foreground">
               Compression wear and awareness apparel designed with and for the
               dysautonomia and POTS community.
@@ -88,7 +88,7 @@ export function Footer() {
         </div>
 
         <div className="mt-8 flex flex-col items-center justify-between gap-4 text-xs text-muted-foreground sm:flex-row">
-          <p>&copy; {new Date().getFullYear()} Vant&eacute;. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Ascera. All rights reserved.</p>
           <div className="flex items-center gap-5">
             <Link href="/privacy" className="transition-colors hover:text-foreground">
               Privacy
