@@ -7,7 +7,7 @@ import { journalPosts } from "@/lib/content"
 export const metadata: Metadata = {
   title: "Learn",
   description:
-    "Plain-language guidance on compression, fit, and living well with POTS and dysautonomia, from the Vanté Journal.",
+    "Plain-language guidance on compression, fit, and living well with POTS and dysautonomia, from the Ascera Journal.",
 }
 
 export default function LearnPage() {

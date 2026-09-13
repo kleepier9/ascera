@@ -12,7 +12,7 @@ export function Mission() {
             Built by people who understand the daily reality.
           </h2>
           <p className="mt-4 leading-relaxed text-muted-foreground text-pretty">
-            Vanté started because the compression wear on the market was
+            Ascera started because the compression wear on the market was
             clinical, uncomfortable, or clearly not made with our community in
             mind. We set out to change that — designing pieces that provide real
             support and actually feel like something you want to wear.
@@ -32,7 +32,7 @@ export function Mission() {
         <div className="relative order-first aspect-[4/3] lg:order-last lg:aspect-auto lg:h-full">
           <Image
             src="/images/lifestyle.png"
-            alt="Two people in Vanté apparel walking together outdoors"
+            alt="Two people in Ascera apparel walking together outdoors"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover"

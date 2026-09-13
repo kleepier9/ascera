@@ -77,9 +77,9 @@ export default function ResourcesPage() {
 
         <div className="mt-12">
           <Disclaimer>
-            Vanté is not a medical provider and these links are shared for
+            Ascera is not a medical provider and these links are shared for
             informational purposes only. The organizations listed are
-            independent and not affiliated with Vanté. Always consult a
+            independent and not affiliated with Ascera. Always consult a
             qualified healthcare professional about your individual needs.
           </Disclaimer>
         </div>

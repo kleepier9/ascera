@@ -313,7 +313,7 @@ export const resourceGroups: ResourceGroup[] = [
         href: "https://www.dysautonomiainternational.org/page.php?ID=39",
       },
       {
-        name: "The Vanté Journal",
+        name: "The Ascera Journal",
         description:
           "Our own plain-language guides on compression, fit, and living well.",
         href: "/learn",

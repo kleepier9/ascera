@@ -8,7 +8,7 @@ import { Newsletter } from "@/components/site/newsletter"
 export const metadata: Metadata = {
   title: "Our Story",
   description:
-    "Vanté was built by and for the dysautonomia community — compression wear and awareness apparel designed around real daily life.",
+    "Ascera was built by and for the dysautonomia community — compression wear and awareness apparel designed around real daily life.",
 }
 
 const values = [
@@ -43,7 +43,7 @@ export default function AboutPage() {
               Built by people who understand the daily reality.
             </h1>
             <p className="mt-5 leading-relaxed text-muted-foreground text-pretty">
-              Vanté started with a simple frustration: the compression wear on
+              Ascera started with a simple frustration: the compression wear on
               the market was clinical, uncomfortable, or clearly not designed
               with our community in mind. We knew there had to be a better way.
             </p>
@@ -51,7 +51,7 @@ export default function AboutPage() {
           <div className="relative aspect-[4/3] overflow-hidden rounded-3xl bg-muted">
             <Image
               src="/images/lifestyle.png"
-              alt="Two people wearing Vanté apparel walking together outdoors"
+              alt="Two people wearing Ascera apparel walking together outdoors"
               fill
               priority
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -77,7 +77,7 @@ export default function AboutPage() {
             like a novelty.
           </p>
           <p>
-            Vanté isn&apos;t here to make medical claims or promise a cure.
+            Ascera isn&apos;t here to make medical claims or promise a cure.
             We&apos;re here to make thoughtful, genuinely supportive products —
             and to show up for a community that has too often been overlooked.
           </p>

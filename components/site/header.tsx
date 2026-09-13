@@ -35,7 +35,7 @@ export function Header() {
           <Menu className="size-5" />
         </button>
 
-        <Link href="/" className="mr-2 shrink-0" aria-label="Vanté home">
+        <Link href="/" className="mr-2 shrink-0" aria-label="Ascera home">
           <Logo />
         </Link>
 

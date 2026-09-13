@@ -4,7 +4,7 @@ import { SupportFinder } from "@/components/support-finder/finder"
 export const metadata: Metadata = {
   title: "Support Finder",
   description:
-    "Answer a few quick questions and we'll point you to the Vanté compression level and pieces that fit how you move.",
+    "Answer a few quick questions and we'll point you to the Ascera compression level and pieces that fit how you move.",
 }
 
 export default function SupportFinderPage() {

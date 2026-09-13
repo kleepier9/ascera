@@ -3,7 +3,7 @@ import { WishlistView } from "@/components/account/wishlist-view"
 
 export const metadata: Metadata = {
   title: "Wishlist",
-  description: "Your saved Vanté pieces.",
+  description: "Your saved Ascera pieces.",
 }
 
 export default function WishlistPage() {

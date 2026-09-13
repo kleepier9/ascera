@@ -8,7 +8,7 @@ import { Disclaimer } from "@/components/site/disclaimer"
 export const metadata: Metadata = {
   title: "FAQs",
   description:
-    "Answers to common questions about Vanté compression wear, support levels, sizing, care, shipping, and returns.",
+    "Answers to common questions about Ascera compression wear, support levels, sizing, care, shipping, and returns.",
 }
 
 export default function FaqsPage() {
